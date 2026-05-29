@@ -1,0 +1,365 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+#menu a {
+    text-decoration: none;
+    color: rgb(38, 37, 37);
+}
+
+#menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 22px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    list-style: none;
+    gap: 60px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 10px;
+}
+
+#menu a:hover {
+    color: black;
+}
+
+#menu a:visited {
+    color: black;
+}
+
+header {
+    margin: 100px 0px 0px 0px;
+    background-image: url(img/espresso.png);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#cuerpo {
+    position: relative;
+    top: 100px;
+    padding: 20px;
+    color: #C9A96E;
+    font-weight: 800;
+    z-index: 900;
+}
+
+#cuerpo h1 {
+    font-size: 50px;
+}
+
+button {
+    border: none;
+    background-color: rgb(139, 94, 60);
+    font-size: 30px;
+    transition: 0.3s;
+    position: relative;
+    left: 100px;
+    color: #fff;
+    width: 150px;
+    cursor:pointer;
+}
+
+
+button:hover {
+    background-color: rgb(107, 72, 46);
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#problema {
+    padding: 20px;
+    margin: 20px;
+}
+
+#problema h2 {
+    font-size: 30px;
+}
+
+#problema p {
+    font-size: 22px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+#titulo {
+    position: absolute;
+    top: 850px;
+    left: 40%;
+    font-size: 25px;
+} 
+
+#beneficios {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    margin: 60px  20px;
+}
+
+#beneficios h2 {
+    font-size: 25px;
+}
+
+#beneficios p {
+    font-size: 22px;
+    max-width: 400px;
+}
+
+
+#B1:hover {
+    box-shadow: 2px 2px 2px 2px rgba(1,1,1,0.1);
+    transition: 0.3s;
+}
+
+#B2:hover {
+    box-shadow: 2px 2px 2px 2px rgba(1,1,1,0.1); 
+    transition: 0.3s;
+}
+
+#B3:hover {
+    box-shadow: 2px 2px 2px 2px rgba(1,1,1,0.1);
+    transition: 0.3s;
+}
+
+#reseñas {
+    text-align: center;
+}
+
+#testimonios {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+#R1 {
+    grid-column: 2/3;
+}
+
+#R2 {
+    grid-column: 3/4;
+}
+
+#R1:hover {
+    box-shadow: 2px 2px 2px 2px rgba(1,1,1,0.1);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+#R2:hover {
+    box-shadow: 2px 2px 2px 2px rgba(1,1,1,0.1);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.testimonio {
+    font-size: 22px;
+}
+
+.avatar{
+    width:50px;
+    height:50px;
+    background:#c47b48;
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-weight:bold;
+}
+
+#tsm {
+    text-align: center;
+}
+
+#precios {
+    margin: 60px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    font-size: 22px;
+}
+
+#planes {
+    text-align: center;
+}
+
+#pidelo {
+    text-align: center;
+    font-size: 28px;
+}
+
+#basico {
+    border: 1px solid rgba(1,1,1,0.5);
+    cursor:pointer;
+}
+
+#premium {
+    border: 1px solid rgba(224, 157, 11, 0.8);
+    cursor:pointer;
+}
+
+#basico:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+#premium:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+#llama {
+    position: absolute;
+    left: 50%;
+}
+
+footer {
+    margin:40px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    height: 200px;
+}
+
+.redes a {
+    color: #000;
+    font-size: 25px;
+}
+/* Adaptacion a dispocitivos moviles */
+@media (max-width: 768px ) {
+#menu ul {
+        gap:15px;
+        font-size:14px;
+        padding:10px;
+    }
+
+#cuerpo h1 {
+    font-size: 35px;
+}
+
+#cuerpo h2 {
+    font-size: 20px;
+}
+
+
+
+#titulo {
+    position: absolute;
+    top: 945px;
+    left: 40%;
+    font-size: 25px;
+}
+
+#problema p {
+    font-size: 15px;
+}
+
+#problema h2 {
+    font-size: 20px;;
+}
+
+#beneficios {
+    grid-template-columns: 1fr;
+    margin: 20px;
+}
+
+#beneficios p {
+    font-size: 14px;
+}
+
+#beneficios img {
+    width: 200px;
+    height: 200px;
+    margin:20px;
+    border-radius: 5%;
+}
+
+#beneficios h2 {
+    font-size: 20px;
+}
+
+#reseñas {
+    font-size: 15px;
+}
+
+#testimonios {
+    grid-template-columns: 1fr;
+}
+
+.avatar {
+    font-size: 15px;
+}
+
+#R1 {
+    grid-column: 1/2;
+    font-size:  15px;
+}
+
+#R2 {
+    grid-column: 1/1;
+    font-size: 15px;
+}
+
+.nombres {
+    font-size: 15px;
+}
+
+.trabajos {
+    font-size: 15px;
+}
+
+#precios {
+    flex-direction: column;
+    font-size: 15px;
+}
+
+#basico {
+    font-size: 15px;
+}
+
+#premium {
+    font-size: 15px;
+
+}
+
+#pidelo {
+    font-size: 15px;
+}
+
+#pidelo button {
+    font-size: 25px;
+}
+
+footer {
+    font-size: 12px;
+    margin:0;
+}
+
+.redes a {
+    font-size: 20px;
+}
+}
